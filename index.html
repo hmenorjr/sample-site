@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>WebSnabb – Fast Websites with Updates Included</title>
+
+  <style>
+    :root {
+      --black: #111;
+      --amber: #f59e0b;
+      --gray: #666;
+      --bg: #fff;
+    }
+
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      font-family: system-ui, -apple-system, BlinkMacSystemFont, sans-serif;
+      color: var(--black);
+      background: var(--bg);
+      line-height: 1.6;
+    }
+
+    a {
+      color: var(--black);
+      text-decoration: none;
+    }
+
+    header {
+      position: sticky;
+      top: 0;
+      background: white;
+      border-bottom: 1px solid #eee;
+      z-index: 100;
+    }
+
+    nav {
+      max-width: 1100px;
+      margin: auto;
+      padding: 1rem;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    nav a.logo {
+      font-weight: 700;
+      font-size: 1.1rem;
+    }
+
+    nav ul {
+      list-style: none;
+      display: flex;
+      gap: 1.2rem;
+    }
+
+    section {
+      max-width: 1100px;
+      margin: auto;
+      padding: 4rem 1rem;
+    }
+
+    h1, h2, h3 {
+      line-height: 1.3;
+      margin-bottom: 1rem;
+    }
+
+    h1 {
+      font-size: 2.4rem;
+    }
+
+    h2 {
+      font-size: 1.8rem;
+    }
+
+    p {
+      color: var(--gray);
+      max-width: 700px;
+    }
+
+    .btn {
+      display: inline-block;
+      margin-top: 1.5rem;
+      padding: 0.8rem 1.4rem;
+      background: var(--black);
+      color: white;
+      font-weight: 600;
+      border-radius: 4px;
+    }
+
+    .btn:hover {
+      background: var(--amber);
+      color: var(--black);
+    }
+
+    .grid {
+      display: grid;
+      gap: 2rem;
+    }
+
+    .grid-3 {
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    }
+
+    .card {
+      border: 1px solid #eee;
+      padding: 1.5rem;
+      border-radius: 6px;
+    }
+
+    .price {
+      font-size: 1.4rem;
+      font-weight: 700;
+      color: var(--black);
+    }
+
+    .image-placeholder {
+      width: 100%;
+      height: 180px;
+      background: #f3f3f3;
+      border: 1px dashed #ccc;
+      margin-bottom: 1rem;
+    }
+
+    footer {
+      border-top: 1px solid #eee;
+      padding: 2rem 1rem;
+      text-align: center;
+      color: var(--gray);
+    }
+
+    @media (max-width: 768px) {
+      nav ul {
+        display: none; /* Replace with hamburger later if needed */
+      }
+
+      h1 {
+        font-size: 2rem;
+      }
+    }
+  </style>
+</head>
+
+<body>
+
+<header>
+  <nav>
+    <a class="logo" href="#home">WebSnabb</a>
+    <ul>
+      <li><a href="#how">How It Works</a></li>
+      <li><a href="#packages">Packages</a></li>
+      <li><a href="#updates">Updates</a></li>
+      <li><a href="#hosting">Hosting</a></li>
+      <li><a href="#about">About</a></li>
+      <li><a href="#start">Get Started</a></li>
+    </ul>
+  </nav>
+</header>
+
+<!-- HERO -->
+<section id="home">
+  <h1>Fast, Reliable Websites — With Updates Included</h1>
+  <p>
+    WebSnabb builds and maintains modern websites for small businesses.
+    No surprise fees. No friction. Stay a member, and updates are included.
+  </p>
+  <a href="#start" class="btn">Get Started</a>
+</section>
+
+<!-- HOW IT WORKS -->
+<section id="how">
+  <h2>How It Works</h2>
+  <div class="grid grid-3">
+    <div class="card">
+      <div class="image-placeholder"></div>
+      <h3>Choose a Package</h3>
+      <p>Clear scope. Fixed pricing. No hidden costs.</p>
+    </div>
+    <div class="card">
+      <div class="image-placeholder"></div>
+      <h3>Invoice & Payment</h3>
+      <p>You receive an official invoice via Ukko.fi.</p>
+    </div>
+    <div class="card">
+      <div class="image-placeholder"></div>
+      <h3>Build & Maintain</h3>
+      <p>We build fast and maintain your site while you stay a member.</p>
+    </div>
+  </div>
+</section>
+
+<!-- PACKAGES -->
+<section id="packages">
+  <h2>Packages</h2>
+  <div class="grid grid-3">
+    <div class="card">
+      <h3>WebSnabb Start</h3>
+      <p class="price">€499 setup · €49 / month</p>
+      <p>1–3 pages · Hosting · Unlimited minor updates</p>
+    </div>
+
+    <div class="card">
+      <h3>WebSnabb Business</h3>
+      <p class="price">€999 setup · €99 / month</p>
+      <p>Up to 7 pages · Priority updates · Performance optimization</p>
+    </div>
+
+    <div class="card">
+      <h3>WebSnabb Pro</h3>
+      <p class="price">€1,499 setup · €149 / month</p>
+      <p>Up to 12 pages · Fast SLA · Monthly health checks</p>
+    </div>
+  </div>
+</section>
+
+<!-- UPDATES -->
+<section id="updates">
+  <h2>Unlimited Updates Policy</h2>
+  <p>
+    Minor updates are included while you remain a member. Requests are queued and handled asynchronously.
+    Out-of-scope work requires an upgrade or separate quote.
+  </p>
+</section>
+
+<!-- HOSTING & DOMAINS -->
+<section id="hosting">
+  <h2>Hosting & Domains</h2>
+  <p>
+    Hosting, backups, security, and monitoring are included.
+    Clients must register and own their domain name.
+    WebSnabb connects the domain once registered.
+  </p>
+</section>
+
+<!-- ABOUT -->
+<section id="about">
+  <h2>About WebSnabb</h2>
+  <p>
+    WebSnabb is built for businesses that want their website handled properly —
+    without agencies, tickets, or hourly invoices.
+  </p>
+</section>
+
+<!-- CTA -->
+<section id="start">
+  <h2>Get Started</h2>
+  <p>
+    Fill out the form. You’ll receive an invoice via Ukko.fi.
+    Once paid, onboarding begins immediately.
+  </p>
+  <a href="#" class="btn">Start Your Website</a>
+</section>
+
+<footer>
+  © WebSnabb · All rights reserved
+</footer>
+
+</body>
+</html>
